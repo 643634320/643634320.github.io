@@ -9,7 +9,7 @@ title {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 250px;
     background-color: #ffffff;
     color: black;
     position: fixed;
@@ -36,14 +36,17 @@ special {
 }
 div.sidebar a {
 color: rgb(255, 255, 255);
+size: 30px;
 }
 .sidebar a {
     display: block;
-    color: rgb(65, 65, 65);
+    color: rgb(3, 3, 3);
+    text-align:left;
     padding: 16px;
     border: 10pxsolidrgb(255,255,255)y;
     border-color: black;
-    margin:20px;
+    size:20px;
+    margin:0px;
     text-decoration: none;
   }
   .box {
@@ -52,8 +55,58 @@ color: rgb(255, 255, 255);
 div.sidebar {
     border-radius: 10px;
 }
+div.sidebar a.active {
+    background-color: black;
+    color: black;
+}
 h3 {
     font-size: 15px;
     color: rgb(41, 41, 41);
     font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+ul.no-bullets {
+    list-style-type:none;
+    margin:0%;
+    padding: 0;
+  }
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: rgb(0, 0, 0);
+  }
+  .sidebar a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  #lionstalkscience {
+    display:inline-block;
+    width: 180px;
+    height: 200px;
+  }
+button.sb {
+   background-color: rgb(126, 126, 126);
+  }
+  div.k {
+    text-align: right;
+    margin-right: 0px;
+  }
+ul.kk {
+    
+    text-align: right;
+    margin-right: 0px;
 }
