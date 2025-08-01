@@ -1,0 +1,174 @@
+* {
+    text-align: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+title {
+    font-size: 50px;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  div.content {
+    margin-left: 200px;
+    padding: 20px 16px;
+    height: 20px;
+    text-align: center;
+  }
+ h1 {
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  }
+p {
+  size: 20px;
+  text-align: center;
+  color: black;
+
+}
+special {
+    font-style: italic;
+    color: black;
+    size: 20px;
+}
+div.sidebar a {
+color: rgb(255, 255, 255);
+size: 30px;
+}
+.sidebar a {
+    display: block;
+    color: rgb(3, 3, 3);
+    text-align:left;
+    padding: 16px;
+    border: 10pxsolidrgb(255,255,255)y;
+    border-color: black;
+    size:20px;
+    margin:0px;
+    text-decoration: none;
+  }
+  .box {
+    border-color:blanchedalmond
+  }
+
+div.sidebar a.active {
+    background-color: black;
+    color: black;
+}
+h3 {
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+ul.sidebar {
+    list-style-type:none;
+    margin:0%;
+    padding: 0;
+  }
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: rgb(0, 0, 0);
+  }
+  .sidebar a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  #lionstalkscience {
+    display:inline-block;
+    width: 190px;
+    height: 190px;
+     border: 5px solid #494949;
+     float: left;
+     margin-left: 400px;
+  }
+  #fungi {
+    width: 190px;
+    height: 190px;
+     border: 5px solid #494949;
+     float: left;
+     margin-left: 10px;
+  }
+  #cool {
+    width: 190px;
+    height: 190px;
+     border: 0px solid #494949;
+     float: left;
+     margin-left: 10px;
+  }
+button.sb {
+   background-color: rgb(126, 126, 126);
+  }
+  div.k {
+    text-align: right;
+    margin-right: 100px;
+    color: black;
+  }
+ul.kk {
+    
+    text-align: right;
+    margin-right: 0px;
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #c7c5c5; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
